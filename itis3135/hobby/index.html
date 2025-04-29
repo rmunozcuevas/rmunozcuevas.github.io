@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8"></meta>
+        <meta name="viewport"content="width=device-width, initial-scale=1.0"></meta>
+        <title>Hobby Site</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <script src="hobbyscript.js" defer></script>
+        <style>
+            html,body{
+                margin: 0;
+                padding: 0;
+                background: lightblue;
+            }
+            p,h3,h1,ul,h2{
+                color: darkblue;
+            }
+            nav ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+
+            }
+           
+            nav ul li a{
+                margin: 0 10px;
+                color: orange;
+            }
+            nav ul li a:hover{
+                text-decoration: underline;
+                color: black;
+            }
+            section{
+                display: none;
+            }
+
+            section.active{
+                display: block;
+            }
+            video{
+                width: 100%; 
+            max-width: 800px; 
+            margin: 20px 0; 
+            display: block; 
+            background-color: black; 
+            }
+            img {
+            width: 100%; 
+            max-width: 800px; 
+            margin: 20px 0; 
+            display: block; 
+        }
+        #citypic{
+            max-height: 40%;
+            max-width: 30%;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+            color: darkblue;
+        }
+        
+        </style>
+
+    </head>
+    <body>
+        <main>
+        <h1>Hobby Site</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#what" class="nav-link" >What</a></li>
+                <li><a href="#when" class="nav-link" >When</a></li>
+                <li><a href="#where" class="nav-link">Where</a></li>
+                <li><a href="#why" class="nav-link">Why</a></li>
+                <li><a href="#prompts" class="nav-link">A.I Prompts</a></li>
+                
+            </ul>
+        </nav>
+        
+        
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Hi guys this is Raymundo Munoz Cuevas. I was born in Mexico City but went to Albany, New York when I was about 1.
+                I lived in Albany for about 6 years, and then I moved to North Carolina. I pretty much grew up in ALbany for my childhood, and then id say for the rest of my life I spent in Wake Forest, North Carolina.
+                In my free time I skateboard, I either skate on campus when there is perfect weather or I go skate in uptown with my friends, I also have 
+                friends who skate in Uptown, so we go around to different places. I also had a big mountain-biking phase where me and my friends would construct
+                mounds of dirt in the woods and try to jump or make obstacle courses and do timed runs around the woody areas.
+            </p>
+            <figure>
+            <img id="citypic" src="../images/uptown_skate.png" alt="me and my friends in uptown taking a skate break."/>
+            <figcaption>Me and my friends taking a skate break in Uptown.</figcaption>
+            </figure>
+            
+        </section>
+        <section id="what">
+        <h2>What</h2>
+        <p>My Hobby is skateboarding. I mainly enjoy the street skate scene more than vert skating, but thats cus I have more access to city streets, than an actual skatepark.
+            Street Skating typically involves skating in the outdoors either in urban settings or just being outdoors and skating. I typically try to find a nice spot within the city that has certain obstacles, such as a stairset, rails or things to skate on or over as practice.
+            I also skate in the pavilion, thats a pretty good place to skate as its pretty flat, or sometimes I skate at the star.
+        </p>
+        <video width="640" height="360" controls>
+            <source src="../videos/popshuv_ray.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        </section>
+
+        <section id="when">
+            <h2>When</h2>
+            <p>I usually skate whenever I have free time, usually whenever I get my work is a good indicator 
+                that I'll have a bit more time to skate whenever. I usually also begin to start skating once the weather becomes less rainy, 
+                and warmer. I usually also get resurgences in wanting to skate, usually whenever I feel like skating I tend to ask my friends
+                who also skate if they wanna go in the city and skate around or attempt to hit any skate spots. My skating can be in the morning, but usually its in the afternoon.
+            </p>
+            <p>Some of the skaters whose styles I appreciate</p>
+            <ul>
+                <li>Yuto Horigome</li>
+                <li>Lizzie Armanto</li>
+                <li>Tao Sasaki</li>
+                <li>Sora Shihai</li>
+            </ul>
+            <video width="640" height="360" controls>
+                <source src="../videos/ollie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+        </section>
+
+        <section id="where">
+            <h2>Where</h2>
+            <p>I skate all over. I typically skate in the campus area, around University Area. Uptown, Southend, Plaza Midwood, CPCC area, Renaissance skate park.
+                I also skate at the star sometimes when I have the time to join other skaters. I also skate in Wake Forest, where I live and go to the skatepark near Downtown Raleigh.
+            </p>
+            <figure>
+                <img id="citypic" src="../images/skateboards.JPG" alt="me and my friends near the greenway trail"/>
+                <figcaption>we all took pictures of our board after bombing a pretty big hill</figcaption>
+                </figure>
+
+        </section>
+
+        <section id="why">
+            <h2>Why</h2>
+            <p>I started skating at around 14, but I almost rammed into a car and therefore I had my board taken away for a while.
+                I could continue to be interested in the hobby as I aged only watching homemade skate compilations. It wouldn't be until 2023, where my interest in skating would be peaked again.
+                One of my friends sold me their skateboard, and then began to form a skate group so I decided to start the skating grind back up again.
+                I would at first begin to skate within South Village, and then I started to skate around the main campus areas. Once I got a bit more confident I began to skate during the day rather than late at night.
+            </p>
+            <video width="640" height="360" controls>
+                <source src="../videos/tableskate.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+                
+        </section>
+
+        <section id="how">
+            <h2>How</h2>
+            <p>Depending on if I want to skate. I typically follow a process. I tend to want to skate, and therefore I start gathering some friends
+                who also want to skate on a certain time or place. We then typically hop on the lightrail and pull up to my friends place.
+                After this We plan out what section of uptown we want to skate, and then just start skating there. Typically there are some tricks I try to hit, usually have to take hundreds of attempts to even get a sort of landing.
+                You generally have to be very comfortable with your board, to even just attempt tricks and it takes a long time to build that confidence. Falling is kind of expected for doing tricks. 
+                Theres a way to fall without hitting the ground too hard, and once you master it, doing tricks become a bit easier. Also taking a bunch of falls initially helps to get the feeling of commiting to a trick, which can hinder so many people trying to even learn the trick.
+                Once you get more comfortable with bailing, falling, and being able to ride smoothly on a skateboard, then you will eventually want to do something more advanced such as tricks.
+            </p>
+        </section>
+
+        <section id="prompts">
+            <h2>A.I Prompts</h2>
+            <p>I was assisted with AI utilizing LLMs such as DeepSeek and ChatGPT in order to help fix
+                any inconsistencies within my code.
+            </p>
+            <p>Prompt: Please find any errors/inconsistencies within my code.</p>
+        </section>
+        </main>
+
+    </body>
+</html>
