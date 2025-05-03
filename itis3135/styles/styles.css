@@ -16,11 +16,7 @@ a:hover{
     text-decoration: lime;
 }
 
-main {
-    text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
-}
+
 
 h2 {
     text-align: center;
@@ -32,3 +28,35 @@ figure {
     text-align: center;
     font-style: italic;
 }
+
+/* Base Styles for Desktop */
+main {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    text-align: left;
+}
+
+
+@media screen and (max-width: 1199px) {
+    main {
+        width: 80%; /* Takes 80% of the screen for tablets */
+    }
+}
+
+/* For Phones (Below 768px) */
+@media screen and (max-width: 768px) {
+    main {
+        width: 95%; /* Takes 95% of the screen on mobile */
+    }
+
+    img {
+        width: 100%; /* Makes images responsive */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Adjust font size for mobile screens */
+    }
+}
+
+
