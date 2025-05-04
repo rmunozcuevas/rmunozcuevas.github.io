@@ -13,9 +13,9 @@
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -49,6 +49,59 @@
       </div>
     </div>
   </section>
+  ...
+</section> <!-- End of .features -->
+
+<!-- Interest Form Section START -->
+<section class="container">
+  <h2>Book Interest Form</h2>
+  <form id="interest-form">
+    <div class="form-group">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="firstName" required />
+    </div>
+
+    <div class="form-group">
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="lastName" required />
+    </div>
+
+    <div class="form-group">
+      <label for="book">Book of Interest:</label>
+      <input type="text" id="book" name="bookInterest" required />
+    </div>
+
+    <div class="form-group">
+      <label for="genre">Preferred Genre:</label>
+      <select id="genre" name="genre" required>
+        <option value="">-- Select Genre --</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Non-Fiction">Non-Fiction</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Biography">Biography</option>
+        <option value="Self-Help">Self-Help</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn-primary">Submit Interest</button>
+  </form>
+
+  <div id="membership-card" class="card-popup hidden">
+    <h3>📚 Membership Card</h3>
+    <p><strong>Name:</strong> <span id="card-name"></span></p>
+    <p><strong>Book of Interest:</strong> <span id="card-book"></span></p>
+    <p><strong>Genre:</strong> <span id="card-genre"></span></p>
+    <button onclick="closeCard()" class="btn-close">Close</button>
+  </div>
+</section>
+<!-- Interest Form Section END -->
+
+<footer>
+  ...
+</footer>
+</body>
+
 
   <footer>
     <div class="container">
