@@ -23,7 +23,8 @@ form.addEventListener('submit', function (e) {
     }
 });
 const suggestionButton = document.getElementById("suggestion-button");
-const sugggestionDisplay = document.getElementById("suggestion-display");
+const suggestionDisplay = document.getElementById("suggestion-display");
+
 
 const GoodBooks = {
     Fiction: ["The Great Gatsby" , "To Kill a MockingBird","1984","Pride and Prejudice"] , 
@@ -33,8 +34,45 @@ const GoodBooks = {
 }
 
 suggestionButton.addEventListener('click', function() {
-    const randomBook = GoodBooks[Math.floor(Math.random() * GoodBooks.length)];
-    sugggestionDisplay.innerText = `How About Reading: ${randomBook}`;
 
+    const genres = Object.keys(GoodBooks);
+
+    const randomGenre = genres[Math.floor(Math.random() * genres.length)];
+
+    const randomBook = GoodBooks[randomGenre][Math.floor(Math.random() * GoodBooks[randomGenre].length)];
+    
+
+    sugggestionDisplay.innerText = `How About Reading: ${randomBook}`;
 });
+
+
+
+// JS for AboutPage
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
+
+function showSlides() {
+  // Hide all slides
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Increment index
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  // Show the current slide
+  slides[slideIndex - 1].style.display = "block";
+
+  // Change image every 3 seconds
+  setTimeout(showSlides, 3000);
+}
+
+// Start slideshow
+showSlides();
+
+
+
 
