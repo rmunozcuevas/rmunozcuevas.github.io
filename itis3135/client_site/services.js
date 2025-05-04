@@ -47,30 +47,30 @@ suggestionButton.addEventListener('click', function() {
 
 
 
-// JS for AboutPage
+
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
 
 function showSlides() {
-  // Hide all slides
+
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
 
-  // Increment index
+
   slideIndex++;
   if (slideIndex > slides.length) {
     slideIndex = 1;
   }
 
-  // Show the current slide
+
   slides[slideIndex - 1].style.display = "block";
 
-  // Change image every 3 seconds
+
   setTimeout(showSlides, 3000);
 }
 
-// Start slideshow
+
 showSlides();
 
 
