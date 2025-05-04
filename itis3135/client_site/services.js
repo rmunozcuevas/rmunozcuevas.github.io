@@ -74,5 +74,28 @@ function showSlides() {
 showSlides();
 
 
+// 
+const card = document.getElementById('membership-card');
+const nameSpan = document.getElementById('card-name');
+const bookSpan = document.getElementById('card-book');
+const genreSpan = document.getElementById('card-genre');
+
+
+const form = document.getElementById('interest-form');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const firstName = document.getElementById('first-name').value;
+  const lastName = document.getElementById('last-name').value;
+  const book = document.getElementById('book').value;
+  const genre = document.getElementById('genre').value;
+
+  nameSpan.innerText = `${firstName} ${lastName}`;
+  bookSpan.innerText = book;
+  genreSpan.innerText = genre;
+
+  card.classList.remove('hidden'); // Show the card
+});
 
 
