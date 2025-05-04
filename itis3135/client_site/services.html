@@ -5,6 +5,7 @@
   <title>Services - JJ's Book Club</title>
   <link rel="stylesheet" href="client.css" />
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <script src="services.js" defer></script>
 </head>
 <body>
   <header>
@@ -30,6 +31,24 @@
       <li>Author Spotlights</li>
       <li>Community Outreach</li>
     </ul>
+  </section>
+
+  <section class="container">
+    <h2>Vote on Genre of the Week!</h2>
+    <form action="/submit-form" method="POST">
+      <div>
+        <label for="vote">Choices:</label>
+        <select id="genre" name="genre" required>
+          <option value="">-- Select Genre --</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+          <option value="History">History</option>
+          <option value="Mystery">Mystery</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit" id="submit-button">Submit</button>
+      </div>
   </section>
 
   <footer>
