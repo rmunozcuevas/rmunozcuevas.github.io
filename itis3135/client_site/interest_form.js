@@ -12,5 +12,5 @@ form.addEventListener('submit', function (e) {
   bookSpan.innerText = book;
   genreSpan.innerText = genre;
 
-  card.classList.remove('hidden'); // Show the card
+  card.classList.remove('hidden'); 
 });
