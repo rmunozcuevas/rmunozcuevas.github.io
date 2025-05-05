@@ -1,27 +1,30 @@
-
 const form = document.getElementById('vote-form');
 const genreSelect = document.getElementById('genre');
 
-
+// Create and insert the result message element just once
 const resultMsg = document.createElement('p');
-
+resultMsg.id = 'vote-result';
+form.appendChild(resultMsg); // This puts it under the form neatly
 
 form.addEventListener('submit', function (e) {
-    e.preventDefault();  
-
+    e.preventDefault();  // Prevents the form from submitting
 
     const selectedGenre = genreSelect.value;
-
 
     if (selectedGenre === "") {
         alert("Please select a genre before submitting!");
     } else {
+        const messages = [
+            `Thank you for voting for ${selectedGenre}! Your choice will be added into the consideration of genre of the week.`,
+            `Your genre: ${selectedGenre} was chosen as genre of the week!`
+        ];
 
-        resultMsg.innerText = `Thank you for voting for ${selectedGenre}!`;
-        document.body.appendChild(resultMsg); 
+        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
+        resultMsg.innerText = randomMessage;
     }
 });
+
 const suggestionButton = document.getElementById('suggestionButton');
 const suggestionDisplay = document.getElementById('suggestionDisplay');
 

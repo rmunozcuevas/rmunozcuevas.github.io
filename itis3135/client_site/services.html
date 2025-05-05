@@ -13,7 +13,7 @@
       <h1 class="logo">JJ's Book Club</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -35,20 +35,23 @@
 
   <section class="container">
     <h2>Vote on Genre of the Week!</h2>
-    <form id = "vote-form" action="/submit-form" method="POST"></form>
+    <form id="vote-form" action="/submit-form" method="POST">
       <div>
-        <label for="vote">Choices:</label>
-        <select id="genre" name="genre" required>
-          <option value="">-- Select Genre --</option>
-          <option value="Fiction">Fiction</option>
-          <option value="Sci-Fi">Sci-Fi</option>
-          <option value="History">History</option>
-          <option value="Mystery">Mystery</option>
-        </select>
+          <label for="genre">Choices:</label>
+          <select id="genre" name="genre" required>
+              <option value="">-- Select Genre --</option>
+              <option value="Fiction">Fiction</option>
+              <option value="Sci-Fi">Sci-Fi</option>
+              <option value="History">History</option>
+              <option value="Mystery">Mystery</option>
+          </select>
       </div>
       <div>
-        <button type="submit" id="submit-button">Submit</button>
+          <button type="submit" id="submit-button">Submit</button>
       </div>
+  </form>
+  
+  
 
 
       <div>
