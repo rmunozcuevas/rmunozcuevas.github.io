@@ -42,36 +42,10 @@ suggestionButton.addEventListener('click', function() {
     const randomBook = GoodBooks[randomGenre][Math.floor(Math.random() * GoodBooks[randomGenre].length)];
     
 
-    sugggestionDisplay.innerText = `How About Reading: ${randomBook}`;
+    suggestionDisplay.innerText = `How About Reading: ${randomBook}`;
 });
 
 
-
-
-let slideIndex = 0;
-const slides = document.getElementsByClassName("slide");
-
-function showSlides() {
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-
-  slides[slideIndex - 1].style.display = "block";
-
-
-  setTimeout(showSlides, 3000);
-}
-
-
-showSlides();
 
 
 // 
@@ -81,21 +55,6 @@ const bookSpan = document.getElementById('card-book');
 const genreSpan = document.getElementById('card-genre');
 
 
-const form = document.getElementById('interest-form');
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-
-  const firstName = document.getElementById('first-name').value;
-  const lastName = document.getElementById('last-name').value;
-  const book = document.getElementById('book').value;
-  const genre = document.getElementById('genre').value;
-
-  nameSpan.innerText = `${firstName} ${lastName}`;
-  bookSpan.innerText = book;
-  genreSpan.innerText = genre;
-
-  card.classList.remove('hidden'); // Show the card
-});
 
 

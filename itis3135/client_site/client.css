@@ -105,16 +105,28 @@ body {
     clear: both;
   }
 
+
   .slideshow-container {
-    max-width: 600px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 600px;
     margin: auto;
   }
   
-  .slide {
-    display: none;
-    width: 100%;
+  #slideshow {
+    width: 500px;
     height: auto;
+    border-radius: 5px;
   }
+  
+  button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  
   
   
