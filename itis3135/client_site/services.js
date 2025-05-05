@@ -22,8 +22,9 @@ form.addEventListener('submit', function (e) {
 
     }
 });
-const suggestionButton = document.getElementById("suggestion-button");
-const suggestionDisplay = document.getElementById("suggestion-display");
+const suggestionButton = document.getElementById('suggestionButton');
+const suggestionDisplay = document.getElementById('suggestionDisplay');
+
 
 
 const GoodBooks = {
@@ -33,17 +34,15 @@ const GoodBooks = {
     History: ["Sapiens: A Brief History of Humankind","A People's History of the United States","The History of the Ancient World", "The Guns of August"]
 }
 
-suggestionButton.addEventListener('click', function() {
-
+suggestionButton.addEventListener('click', function () {
     const genres = Object.keys(GoodBooks);
-
     const randomGenre = genres[Math.floor(Math.random() * genres.length)];
+    const booksInGenre = GoodBooks[randomGenre];
+    const randomBook = booksInGenre[Math.floor(Math.random() * booksInGenre.length)];
 
-    const randomBook = GoodBooks[randomGenre][Math.floor(Math.random() * GoodBooks[randomGenre].length)];
-    
-
-    suggestionDisplay.innerText = `How About Reading: ${randomBook}`;
+    suggestionDisplay.innerText = `How about reading: "${randomBook}" from the ${randomGenre} genre?`;
 });
+
 
 
 
